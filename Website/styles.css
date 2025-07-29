@@ -1,0 +1,138 @@
+body{
+    padding:0;
+    font-family: 'Inter';
+    margin-top: 30px;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 190px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    margin: 0 auto;
+    background-color:transparent;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.icons{
+    display:flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+a{
+    text-decoration: none;
+    color:inherit
+}
+
+a:visited{
+    color: inherit;
+}
+
+a:active{
+    color: inherit
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.wrapper{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlidein 1s ease-out forwards;
+}
+
+@keyframes fadeSlidein {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+img{
+    Height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 45px rgba(192, 192, 192, 0.2);
+    margin-top: 40px;
+}
+
+.pick{
+   background-color: #00ffff;
+   border-radius: 15px;
+   padding: 0.1em;
+   color: #001f33;
+   font-weight: bolder;
+}
+
+p{
+    font-size: 28px;
+    text-align: center;
+}
+
+.Rev{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.divs{
+    height: 400px;
+    width: 300px;
+    border: 1px solid silver;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 45px rgba(192, 192, 192, 0.2);
+    transition: transform 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.divs:hover{
+    border: 1px solid silver;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 45px rgba(192, 192, 192, 0.2);
+    animation: grow 0.3s forwards;
+}
+
+@keyframes grow{
+ from{
+    transform: scale(1);
+ } 
+
+ to{
+    transform:scale(1.08)
+ }
+}
+
+footer{
+    padding: 40px 20px;
+    margin-top:40px;
+    border-top: 0.1px solid silver;
+}
+
+.new{
+    font-size: 20px;
+}
+
+.back{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.back:hover{
+    color:#ffffff;
+    transform: translateY(-3px)
+}

@@ -129,7 +129,7 @@ footer{
     margin-top: 20px;
     text-decoration: none;
     font-weight: bold;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.8s ease, color 0.8s ease;
 }
 
 .back:hover{

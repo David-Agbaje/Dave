@@ -136,3 +136,9 @@ footer{
     color:#ffffff;
     transform: translateY(-3px)
 }
+
+@media (max-width: 768px) {
+    .Rev{
+        flex-direction: column;
+        align-items: center;
+    }
